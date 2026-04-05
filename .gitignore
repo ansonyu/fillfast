@@ -1,0 +1,15 @@
+# Publishing internals
+PUBLISHING.md
+fillfast.zip
+
+# Store assets (not needed in extension itself)
+store/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FillFast</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <span class="logo">&#9889;</span>
+      <h1>FillFast</h1>
+    </div>
+    <p id="current-url" class="url-display" title=""></p>
+  </header>
+
+  <main>
+    <div class="actions">
+      <button id="btn-save" class="btn btn-primary">Save Form</button>
+      <button id="btn-fill" class="btn btn-secondary" disabled>Fill Form</button>
+    </div>
+
+    <p id="password-notice" class="notice">Password fields are never saved.</p>
+
+    <section id="profiles-section">
+      <h2>Saved for this page</h2>
+      <ul id="profile-list"></ul>
+      <p id="no-profiles" class="muted">No saved data for this page yet.</p>
+    </section>
+  </main>
+
+  <div id="status-bar" class="status-bar hidden"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --border: #e0e0e0;
+  --text: #1a1a1a;
+  --text-muted: #757575;
+  --accent: #1a73e8;
+  --accent-hover: #1558b0;
+  --danger: #d32f2f;
+  --danger-hover: #b71c1c;
+  --success-bg: #e8f5e9;
+  --success-text: #2e7d32;
+  --error-bg: #fce4ec;
+  --error-text: #b71c1c;
+  --radius: 6px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  width: 320px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.logo {
+  font-size: 18px;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.url-display {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 292px;
+}
+
+/* Main */
+main {
+  padding: 12px 14px;
+  flex: 1;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 7px 12px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:not(:disabled):hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:not(:disabled):hover {
+  background: var(--border);
+}
+
+/* Notice */
+.notice {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* Profiles section */
+#profiles-section h2 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+#profile-list {
+  list-style: none;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 5px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.profile-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+
+.btn-delete:hover {
+  color: var(--danger);
+  background: var(--error-bg);
+}
+
+.muted {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Status bar */
+.status-bar {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.status-bar.hidden {
+  display: none;
+}
+
+.status-bar.success {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.status-bar.error {
+  background: var(--error-bg);
+  color: var(--error-text);
+}

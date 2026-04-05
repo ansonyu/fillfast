@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FillFast — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      max-width: 680px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+    }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 18px; margin-top: 36px; }
+    .meta { color: #757575; font-size: 14px; margin-bottom: 36px; }
+    a { color: #1a73e8; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1>FillFast Privacy Policy</h1>
+  <p class="meta">Last updated: April 4, 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+    FillFast is a Chrome browser extension that saves web form field values locally on your
+    device and replays them on demand. This policy explains exactly what data is handled and how.
+  </p>
+
+  <h2>Data We Collect</h2>
+  <p>FillFast stores the following data <strong>locally on your device</strong> using
+  <code>chrome.storage.local</code>:</p>
+  <ul>
+    <li>The URL of pages where you choose to save a form</li>
+    <li>The values you entered in eligible form fields (text inputs, dropdowns, checkboxes, etc.)</li>
+    <li>The timestamp of when you saved a profile</li>
+  </ul>
+
+  <h2>Data We Do Not Collect</h2>
+  <ul>
+    <li><strong>Passwords</strong> — password fields are never read or stored</li>
+    <li><strong>Hidden fields</strong> — hidden, file, and system inputs are always skipped</li>
+    <li><strong>Browsing history</strong> — the extension only acts when you explicitly click Save or Fill</li>
+    <li><strong>Personal identity data</strong> — no names, emails, or any content is collected by the developer</li>
+  </ul>
+
+  <h2>Data Transmission</h2>
+  <p>
+    FillFast does <strong>not transmit any data to any server</strong>. All saved form data
+    remains entirely within your browser's local storage and is never sent over the network.
+    The extension makes no network requests of any kind.
+  </p>
+
+  <h2>Data Storage and Deletion</h2>
+  <p>
+    Data is stored in <code>chrome.storage.local</code> on your device. You can delete saved
+    profiles at any time by clicking the <strong>×</strong> button next to any profile in the
+    FillFast popup. Uninstalling the extension removes all stored data.
+  </p>
+
+  <h2>Permissions Explained</h2>
+  <ul>
+    <li>
+      <strong>activeTab</strong> — used to identify which page you are currently on, so the
+      correct saved profile can be loaded or saved.
+    </li>
+    <li>
+      <strong>storage</strong> — used to persist your saved form profiles locally in your browser.
+    </li>
+    <li>
+      <strong>Content script on all URLs</strong> — the extension injects a script to read and
+      fill form fields on whichever page you are visiting. This script only runs when you click
+      Save or Fill; it does not monitor or record your activity passively.
+    </li>
+  </ul>
+
+  <h2>Third Parties</h2>
+  <p>
+    FillFast does not share data with any third parties. There are no analytics, tracking
+    pixels, crash reporters, or external dependencies of any kind.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    If this policy changes, the updated version will be published at this URL with a revised
+    "Last updated" date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions or concerns? Open an issue at
+    <a href="https://github.com/YOUR_GITHUB_USERNAME/fillfast/issues">
+      github.com/YOUR_GITHUB_USERNAME/fillfast/issues
+    </a>.
+  </p>
+</body>
+</html>
